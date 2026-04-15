@@ -51,4 +51,9 @@ bookStoreTitle.textContent = bookStore.name;
 // the book elements
 const booklist =document.querySelector('#book-list');
 
-    //
+    //create elements
+    const bookContaomer = document.createElement('li');
+    const bookTitle = document.createElement('h3');
+    const bookAuthor = document.createElement('p');
+    const bookImage = document.createElement('img');
+    
