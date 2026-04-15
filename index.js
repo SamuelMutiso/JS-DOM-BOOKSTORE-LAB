@@ -44,4 +44,11 @@ const bookStore = {
 }
 
 // Write your code here!
+// we now manipulating the elements
+const bookStoreTitle = document.quesrySelector('#header');
+bookStoreTitle.textContent = bookStore.name;
 
+// the book elements
+const booklist =document.querySelector('#book-list');
+
+    //
