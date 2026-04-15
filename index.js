@@ -52,8 +52,16 @@ bookStoreTitle.textContent = bookStore.name;
 const booklist =document.querySelector('#book-list');
 
     //create elements
-    const bookContaomer = document.createElement('li');
+    const bookContainer = document.createElement('li');
     const bookTitle = document.createElement('h3');
     const bookAuthor = document.createElement('p');
     const bookImage = document.createElement('img');
-    
+
+    //setting the content
+    bookTitle.textContent = book.title;
+    bookAuthor.textContent = book.author;
+    bookImage.src = book.imageUrl;
+
+    // appedning the content together
+    bookContainer.append(bookTitle, bookAuthor, bookImage);
+    booklist.append(bookContainer);
