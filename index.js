@@ -45,12 +45,14 @@ const bookStore = {
 
 // Write your code here!
 // we now manipulating the elements
-const bookStoreTitle = document.quesrySelector('#header');
+const bookStoreTitle = document.querySelector('#header');
 bookStoreTitle.textContent = bookStore.name;
 
 // the book elements
 const booklist =document.querySelector('#book-list');
 
+// for loop
+bookStore.books.forEach(book => {
     //create elements
     const bookContainer = document.createElement('li');
     const bookTitle = document.createElement('h3');
@@ -65,3 +67,4 @@ const booklist =document.querySelector('#book-list');
     // appedning the content together
     bookContainer.append(bookTitle, bookAuthor, bookImage);
     booklist.append(bookContainer);
+})
